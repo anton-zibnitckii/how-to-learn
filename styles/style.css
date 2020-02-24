@@ -1,4 +1,4 @@
-.page {
+.page /* стиль родительского класса страницы */{
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
     /* поэтому выше установлена минимальная ширина страницы */
@@ -9,11 +9,75 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+.header /* стиль верхнего колонтитула */ {
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    /* выше установили ограничения для секции */
+    background-color: #F2F2F2; /* фон верхнего колонтитула */
+    display: flex;
+    position: relative;
+    align-items: center; /*выравнивает заголовок по центру контейнера */
+}
+
+.logo /* стиль логотипа */{
+    width: 183px;
+    height: 32px;
+    background: center cover; /* фон по центру, с масштабированием по высоте или ширине */
+}
+
+.logo_place_header /* модификатор логотипа для верхнего колонтитула */ {
+    position: absolute;
+    top: 30px;
+    left: 64px;
+    background-image: url(../images/logo.svg);
+    z-index: 5;
+}
+
+.header__title /* стиль для зага верхнего колонтитула */ {
+    display: flex;
+    width: 730px;
+    padding-left: 64px;
+    font: 102px bold;
+    line-height: 96px;
+    z-index: 4;
+}
+
+.header__subtitle /* стиль для подзага верхнего колонтитула */ {
+    width: 388px;
+    position: absolute;
+    left: 64px;
+    bottom: 30px;
+    font: 18px normal;
+    line-height: 25px;
+    z-index: 3;
+}
+
+.header__link /* стиль для ссылки в подзаге верхнего колонтитула */ {
+    text-decoration: none;
+    color: #2F80ED;
+    z-index: 3;
+}
+
+.header__main-illustration /* стиль для главной картинки верхнего колонтитула */ {
+    width: 765px;
+    height: 608px;
+    position: absolute;
+    background-image: url(../images/two_again.png);
+    alt: "опять двойка";
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.header__square-pic /* стиль для синего квадрата верхнего колонтитула */ {
+    width: 568px;
+    height: 568px;
+    background-color: #2F80ED;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
