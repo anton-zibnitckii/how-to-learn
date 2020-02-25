@@ -13,27 +13,28 @@
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    background-color: #F2F2F2; /* фон верхнего колонтитула */
+    background-color: #F2F2F2; 
     display: flex;
-    position: relative;
+    position: relative; /*иначе не будет работать absolute в лого */
     align-items: center; /*выравнивает заголовок по центру контейнера */
 }
 
-.logo /* стиль логотипа */{
+.logo {
     width: 183px;
     height: 32px;
-    background: center cover; /* фон по центру, с масштабированием по высоте или ширине */
+    background: center cover; 
 }
 
-.logo_place_header /* модификатор логотипа для верхнего колонтитула */ {
+.logo_place_header  {
     position: absolute;
     top: 30px;
     left: 64px;
-    background-image: url(../images/logo.svg);
+    background: url(../images/logo.svg);
+    alt: "logo";
     z-index: 5;
 }
 
-.header__title /* стиль для зага верхнего колонтитула */ {
+.header__title {
     display: flex;
     width: 730px;
     padding-left: 64px;
@@ -42,7 +43,7 @@
     z-index: 4;
 }
 
-.header__subtitle /* стиль для подзага верхнего колонтитула */ {
+.header__subtitle {
     width: 388px;
     position: absolute;
     left: 64px;
@@ -52,7 +53,7 @@
     z-index: 3;
 }
 
-.header__link /* стиль для ссылки в подзаге верхнего колонтитула */ {
+.header__link {
     text-decoration: none;
     color: #2F80ED;
     z-index: 3;
@@ -111,13 +112,7 @@
 }
 
 .two-columns__span-accent {
-    line-height: 34px;
-    font: 24px bold;
-}
-
-.two-columns__span-accent {
-    line-height: 34px;
-    font: 24px bold;
+    font-weight: 700px;
 }
 
 .digits {
@@ -128,7 +123,7 @@
     line-height: 69px;
     font: 60px bold;
     text-align: center;
-    padding: 0 20%; /* width: 60% */
+    margin: 0;
 }
 
 .section-subtitle {
@@ -166,16 +161,41 @@
     margin: 20px 0 0;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-    height: 568px;
-    width: 568px;
+.feinman {
+    margin-top: 100px;
+    height: 790px;
+    background-size: 867px 637px;
+    background: #F2F2F2 url(../images/feinman.png) no-repeat bottom left; /*фон серый без повторений расположение снизу слева */
+    alt: "фейнман"
+    position: relative;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
+.feinman__title {
+    line-height: 1.15;
+    font: 120px bold;
+    max-width: 648px;
+    text-align: center;
+    padding: 100px 0 0;
+    margin: 0 auto;
+}
+
+.feinman__subtitle {
+    line-height: 51px;
+    font: 36px normal;
+    text-align: center;
+    margin: 70px 0 0;
+}
+
+.feinman__link {
+    text-decoration: none;
+    line-height: 51px;
+    font: 36px normal;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    right: 48px;
+}
+
+.kaufman {
+    position: relative;
 }
