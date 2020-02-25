@@ -80,6 +80,92 @@
     z-index: 1;
 }
 
+.description {
+    margin-top: 100px;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.two-columns__brief {
+    max-width: 175px;
+    line-height: 1.2;
+    font: 18px normal;
+    color: #2F80ED;
+}
+
+.two-columns__main-text {
+    width: 80%;
+    min-width: 784px;
+}
+
+.two-columns__paragraph {
+    line-height: 34px;
+    font: 24px normal;
+    margin: 30px 0 0;
+}
+
+.two-columns__span-accent {
+    line-height: 34px;
+    font: 24px bold;
+}
+
+.two-columns__span-accent {
+    line-height: 34px;
+    font: 24px bold;
+}
+
+.digits {
+    margin-top: 100px;
+}
+
+.section-title {
+    line-height: 69px;
+    font: 60px bold;
+    text-align: center;
+    padding: 0 20%; /* width: 60% */
+}
+
+.section-subtitle {
+    line-height: 34px;
+    font: 24px normal;
+    text-align: center;
+    margin: 20px 0 0; /* внешний отступ от верхнего контейнера 20px */
+    padding: 0 20%; /* width: 60% */
+}
+
+.table {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* перенос в ряд слева направо */
+    justify-content: space-between; /* равномерное расположение от начальной до конечной линии контейнера */
+    align-content: space-between; /* равномерное для многострочности */
+}
+
+.table__cell {
+    margin-top: 60px;
+    width: 250px;
+}
+
+.table__heading {
+    line-height: 1.2;
+    font: 24px bold;
+    margin: 0; /* убираем родительские отступы */
+}
+
+.table__text {
+    line-height: 1.2;
+    font: 18px normal;
+    margin: 20px 0 0;
+}
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
     height: 568px;
