@@ -31,16 +31,17 @@
     left: 64px;
     background: url(../images/logo.svg);
     alt: "logo";
-    z-index: 5;
+    z-index: 2;
 }
 
 .header__title {
     display: flex;
     width: 730px;
     padding-left: 64px;
-    font: 102px bold;
+    font-size: 102px;
+    font-weight: 700;
     line-height: 96px;
-    z-index: 4;
+    z-index: 2;
 }
 
 .header__subtitle {
@@ -48,15 +49,16 @@
     position: absolute;
     left: 64px;
     bottom: 30px;
-    font: 18px normal;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 25px;
-    z-index: 3;
+    z-index: 2;
 }
 
 .header__link {
     text-decoration: none;
     color: #2F80ED;
-    z-index: 3;
+    z-index: 2;
 }
 
 .header__main-illustration /* стиль для главной картинки верхнего колонтитула */ {
@@ -68,7 +70,7 @@
     background-size: cover;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .header__square-pic /* стиль для синего квадрата верхнего колонтитула */ {
@@ -78,7 +80,7 @@
     position: absolute;
     top: 64px;
     right: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 .description {
@@ -96,23 +98,29 @@
 .two-columns__brief {
     max-width: 175px;
     line-height: 1.2;
-    font: 18px normal;
+    font-size: 18px;
+    font-weight: 400;
     color: #2F80ED;
 }
 
 .two-columns__main-text {
     width: 80%;
-    min-width: 784px;
+    max-width: 784px;
+}
+
+.two-columns__paragraph:first-of-type {
+    margin-top: 0;
 }
 
 .two-columns__paragraph {
     line-height: 34px;
-    font: 24px normal;
+    font-size: 24px;
+    font-weight: 400;
     margin: 30px 0 0;
 }
 
 .two-columns__span-accent {
-    font-weight: 700px;
+    font-weight: 700;
 }
 
 .digits {
@@ -121,16 +129,19 @@
 
 .section-title {
     line-height: 69px;
-    font: 60px bold;
+    font-size: 60px;
+    font-weight: 700;
     text-align: center;
     margin: 0;
+    padding: 0 20%; /* width: 60% */
 }
 
 .section-subtitle {
     line-height: 34px;
-    font: 24px normal;
+    font-size: 24px;
+    font-weight: 400;
     text-align: center;
-    margin: 20px 0 0; /* внешний отступ от верхнего контейнера 20px */
+    margin: 20px 0 0; 
     padding: 0 20%; /* width: 60% */
 }
 
@@ -139,9 +150,9 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* перенос в ряд слева направо */
-    justify-content: space-between; /* равномерное расположение от начальной до конечной линии контейнера */
-    align-content: space-between; /* равномерное для многострочности */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-content: space-between; 
 }
 
 .table__cell {
@@ -151,28 +162,31 @@
 
 .table__heading {
     line-height: 1.2;
-    font: 24px bold;
-    margin: 0; /* убираем родительские отступы */
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0; 
 }
 
 .table__text {
     line-height: 1.2;
-    font: 18px normal;
+    font-size: 18px;
+    font-weight: 400;
     margin: 20px 0 0;
 }
 
 .feinman {
+    position: relative;
     margin-top: 100px;
     height: 790px;
     background-size: 867px 637px;
     background: #F2F2F2 url(../images/feinman.png) no-repeat bottom left; /*фон серый без повторений расположение снизу слева */
     alt: "фейнман"
-    position: relative;
 }
 
 .feinman__title {
     line-height: 1.15;
-    font: 120px bold;
+    font-size: 120px;
+    font-weight: 700;
     max-width: 648px;
     text-align: center;
     padding: 100px 0 0;
@@ -181,7 +195,8 @@
 
 .feinman__subtitle {
     line-height: 51px;
-    font: 36px normal;
+    font-size: 36px;
+    font-weight: 400;
     text-align: center;
     margin: 70px 0 0;
 }
@@ -189,7 +204,8 @@
 .feinman__link {
     text-decoration: none;
     line-height: 51px;
-    font: 36px normal;
+    font-size: 36px;
+    font-weight: 400;
     color: #000;
     position: absolute;
     top: 50%;
@@ -198,4 +214,45 @@
 
 .kaufman {
     position: relative;
+    background-color: #1F1F1F;
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.section-title_theme_dark {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.section-subtitle_theme_dark {
+    color: #fff;
+    position: relative;
+    z-index: 1; 
+}
+
+.table_theme_dark {
+    position: relative;
+    z-index: 1;
+}
+
+.table__cell_theme_dark {
+    width: 200px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 80px 0 0; 
+}
+
+.kaufman__triangle {
+    width: 877px;
+    height: 877px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/triangle.svg);
+    position: absolute;
+    top: 0;
+    right: -210px;
+    z-index: 0;
 }
