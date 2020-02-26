@@ -1,6 +1,6 @@
- div,img, a, section, h1, h2 ,p, h3, h4, h5, h6 {
+ /* div,img, a, section, h1, h2 ,p, h3, h4, h5, h6 {
     border: 1px solid purple;
-  }
+  } */
 .page /* стиль родительского класса страницы */{
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
