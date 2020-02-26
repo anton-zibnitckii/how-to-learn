@@ -1,6 +1,6 @@
-/* div,img, a, section, h1, h2 ,p, h3, h4, h5, h6 {
+ div,img, a, section, h1, h2 ,p, h3, h4, h5, h6 {
     border: 1px solid purple;
-  }*/
+  }
 .page /* стиль родительского класса страницы */{
     min-width: 1100px;
     /* мы ещё не умеем делать мобильную версию сайта, */
@@ -108,7 +108,7 @@
 
 .two-columns__main-text {
     width: 80%;
-    max-width: 784px;
+    min-width: 784px;
 }
 
 .two-columns__paragraph:first-of-type {
@@ -276,9 +276,12 @@
     min-height: 250px;
 }
 
-.footer__content_copyright {
+.footer__column_content_copyright {
     flex-basis: 711px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }   
 
 .logo_place_footer {
@@ -288,13 +291,10 @@
 }
 
 .footer__author {
-    position: absolute;
-    left: 0;
-    bottom: 18px;
     line-height: 25px;
     font-size: 18px;
     font-weight: 400;
-    margin: 18px 0 0;
+    margin: 18px 0;
     color: #F2F2F2;
 }
 
@@ -309,7 +309,6 @@
 .footer__column-links {
     list-style: none;
     padding: 0;
-    margin-left: 0;
 }
 
 .footer__link {
