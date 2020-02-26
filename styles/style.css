@@ -34,7 +34,7 @@
     position: absolute;
     top: 30px;
     left: 64px;
-    background: url(../images/logo.svg);
+   /* background: url(../images/logo.svg); */
     z-index: 2;
 }
 
@@ -69,7 +69,7 @@
     width: 765px;
     height: 608px;
     position: absolute;
-    background-image: url(../images/two_again.png);
+ /* background-image: url(../images/two_again.png); */
     background-size: cover;
     right: 0;
     bottom: 0;
@@ -284,7 +284,7 @@
 .logo_place_footer {
     width: 183px;
     height: 35px;
-    background-image: url(../images/logo_white.svg);
+/*  background-image: url(../images/logo_white.svg); */
 }
 
 .footer__author {
