@@ -12,7 +12,7 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header /* стиль верхнего колонтитула */ {
+.header {
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
@@ -65,7 +65,7 @@
     z-index: 2;
 }
 
-.header__main-illustration /* стиль для главной картинки верхнего колонтитула */ {
+.header__main-illustration {
     width: 765px;
     height: 608px;
     position: absolute;
@@ -76,7 +76,7 @@
     z-index: 1;
 }
 
-.header__square-pic /* стиль для синего квадрата верхнего колонтитула */ {
+.header__square-pic {
     width: 568px;
     height: 568px;
     background-color: #2F80ED;
@@ -136,7 +136,7 @@
     font-weight: 700;
     text-align: center;
     margin: 0;
-    padding: 0 20%; /* width: 60% */
+    padding: 0 20%; 
 }
 
 .section-subtitle {
@@ -145,7 +145,7 @@
     font-weight: 400;
     text-align: center;
     margin: 20px 0 0; 
-    padding: 0 20%; /* width: 60% */
+    padding: 0 20%; 
 }
 
 .table {
@@ -182,7 +182,7 @@
     margin-top: 100px;
     height: 790px;
     background-size: 867px 637px;
-    background: #F2F2F2 url(../images/feinman.png) no-repeat bottom left; /*фон серый без повторений расположение снизу слева */
+    background: #F2F2F2 url(../images/feinman.png) no-repeat bottom left;
 }
 
 .feinman__title {
