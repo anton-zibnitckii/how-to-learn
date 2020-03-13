@@ -9,8 +9,12 @@
     min-height: 600px;
     max-height: 756px;
     background-color: #F2F2F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
 }

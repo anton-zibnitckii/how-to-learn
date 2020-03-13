@@ -1,19 +1,16 @@
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+@import url(../../rotation/rotation.css);
+
 .header__square-pic {
-    width: 568px;
-    height: 568px;
-    background-color: #2F80ED;
-    position: absolute;
-    top: 64px;
-    right: 0;
-    z-index: 0;
-    transform: rotate(-15deg);
-    animation: rotation 20s linear infinite;
+  width: 568px;
+  height: 568px;
+  background-color: #2F80ED;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+  -webkit-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -webkit-animation: rotation 20s linear infinite;
+  animation: rotation 20s linear infinite;
 }

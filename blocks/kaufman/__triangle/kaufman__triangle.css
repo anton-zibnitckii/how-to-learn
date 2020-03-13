@@ -1,11 +1,4 @@
-@keyframes rotation {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-}
+@import url(../../rotation/rotation.css);
 
 .kaufman__triangle {
   width: 877px;
@@ -18,5 +11,6 @@
   top: 0;
   right: -210px;
   z-index: 0;
+  -webkit-animation: rotation 20s linear infinite;
   animation: rotation 20s linear infinite;
 }

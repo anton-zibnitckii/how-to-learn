@@ -6,9 +6,11 @@
   text-decoration: none;
   color: #2F80ED;
   z-index: 2;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
 
 .khan__buy-link:hover {
-opacity: .4;
+  opacity: .4;
 }
