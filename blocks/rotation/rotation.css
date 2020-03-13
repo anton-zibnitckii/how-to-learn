@@ -1,21 +1,2 @@
-@-webkit-keyframes rotation {
-  from {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  }
-  to {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  }
-  to {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  }
-}
+@import url(./_figure/rotation_figure_square.css);
+@import url(./_figure/rotation_figure_triangle.css);

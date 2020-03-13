@@ -11,6 +11,6 @@
   -webkit-transform: rotate(-15deg);
   -ms-transform: rotate(-15deg);
   transform: rotate(-15deg);
-  -webkit-animation: rotation 20s linear infinite;
-  animation: rotation 20s linear infinite;
+  -webkit-animation: rotation_square 20s linear infinite;
+  animation: rotation_square 20s linear infinite;
 }
